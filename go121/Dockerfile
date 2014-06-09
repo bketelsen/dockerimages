@@ -1,4 +1,4 @@
-FROM ubuntu:13.10
+FROM ubuntu:14.04
 
 RUN apt-get update -q
 RUN apt-get install -qy build-essential curl git mercurial bzr
