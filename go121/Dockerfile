@@ -8,7 +8,7 @@ RUN apt-get install -qy nodejs npm
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN npm install -g bower
 
-RUN curl -s https://go.googlecode.com/files/go1.2.src.tar.gz | tar -v -C /usr/local -xz
+RUN curl -s http://golang.org/dl/go1.3.src.tar.gz | tar -v -C /usr/local -xz
 RUN cd /usr/local/go/src && ./make.bash --no-clean 2>&1
 ENV PATH /usr/local/go/bin:/opt/bin:$PATH
 
